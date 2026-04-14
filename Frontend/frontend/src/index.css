@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #fefdfc;
+}
+
+.nav-main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  padding: 18px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  backdrop-filter: blur(6px);
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 48px;
+}
+
+.tagline {
+  margin-top: 10px;
+  max-width: 700px;
+}
+
+.btn,
+.Know,
+.form-box button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #c0392b;
+  color: white;
+  cursor: pointer;
+}
+
+.places {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 50px 40px;
+}
+
+.abt {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.plc {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 24px;
+  padding: 15px 15px 8px;
+}
+
+.desc {
+  padding: 0 15px;
+  color: #444;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form-page,
+.admin-page {
+  min-height: 100vh;
+  padding: 120px 20px 40px;
+  background: linear-gradient(135deg, #fefdfc, #f8ece8);
+}
+
+.form-box {
+  max-width: 450px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-box input,
+.form-box textarea,
+.form-box select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.feedback-list {
+  max-width: 900px;
+  margin: 20px auto;
+  display: grid;
+  gap: 20px;
+}
+
+.feedback-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(135deg, #fefdfc, #f8ece8);
+}
+
+.auth-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1400&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.auth-left h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.auth-left p {
+  font-size: 18px;
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+.auth-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-box input,
+.form-box textarea,
+.form-box select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.form-box button {
+  margin-top: 5px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #c0392b;
+  color: white;
+  cursor: pointer;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.auth-switch a {
+  color: #c0392b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .auth-page {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-left {
+    min-height: 220px;
+    padding: 35px 25px;
+  }
+
+  .auth-left h1 {
+    font-size: 36px;
+  }
+}
+.logout-btn {
+  background: #c0392b;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
